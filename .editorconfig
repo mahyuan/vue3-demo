@@ -1,0 +1,18 @@
+root = true
+
+[*]
+
+# [space | tab]
+indent_style = space
+
+indent_size = 2
+
+# 换行符 [lf | cr | crlf]
+end_of_line = lf
+
+charset = utf-8
+
+# 是否除去换行行首的任意空白字符
+trim_trailing_whitespace = false
+
+insert_final_newline = true

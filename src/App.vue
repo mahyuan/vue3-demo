@@ -1,14 +1,31 @@
 <template>
   <div>
     <div class="count-wrap">
-      <div class="count">count is {{ count }}</div>
-      <div class="plusone">plus one is {{ plusOne }}</div>
-      <button @click="increment">count++</button>
+      <div class="count">
+        count is {{ count }}
+      </div>
+      <div class="plusone">
+        plus one is {{ plusOne }}
+      </div>
+      <button @click="increment">
+        count++
+      </button>
     </div>
-    <el-button  type="primary" round color="red">搜索</el-button>
-    <el-button  type="text"  color="ping">查询</el-button>
-    <HelloWorld :count="count"></HelloWorld>
-    <List></List>
+    <el-button
+      type="primary"
+      round
+      color="red"
+    >
+      搜索
+    </el-button>
+    <el-button
+      type="text"
+      color="ping"
+    >
+      查询
+    </el-button>
+    <HelloWorld :count="count" />
+    <List />
   </div>
 </template>
 
