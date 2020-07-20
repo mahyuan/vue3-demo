@@ -7,12 +7,15 @@ import Button from './components/Button.vue'
 
 import directives from './directives'
 
+import router from './router'
 
 const app = createApp(App, {
   // provide: {
   //     user: 'John Doe'
-  //   }
+  // }
 })
+
+app.use(router)
 
 directives.install(app)
 
@@ -24,4 +27,9 @@ app.config.globalProperties.$http = () => {
 
 app.component('el-button', Button)
 
-app.mount('#app')
+router.isReady().then(() => {
+  // resolve the request
+  app.mount('#app')
+})
+
+// app.mount('#app')
